@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use DisFace3DNet, please cite the accompanying paper."
+title: "DisFace3DNet: Interpretable Facial Attractiveness Prediction via 3D Component Disentanglement"
+type: software
+authors:
+  - family-names: Rao
+    given-names: Fenggui
+    orcid: "https://orcid.org/0009-0000-8990-1515"
+  - family-names: Luximon
+    given-names: Yan
+    orcid: "https://orcid.org/0000-0003-2843-847X"
+  - family-names: Zhang
+    given-names: Jie
+    orcid: "https://orcid.org/0000-0001-8219-5590"
+repository-code: "https://github.com/RobbieRao/DisFace3DNet"
