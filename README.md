@@ -1,8 +1,8 @@
 # DisFace3DNet
 
-**Interpretable Facial Attractiveness Prediction via 3D Component Disentanglement**
+**Explainable Facial Attractiveness Prediction via 3D Component Disentanglement**
 
-> **Status: Coming soon.** This repository accompanies a manuscript currently under review. The implementation and the processed component-data package used in the paper will be released upon acceptance, subject to the terms of the original datasets and external model providers.
+> **Status: Coming soon.** This is the project page for the accompanying paper. Upon acceptance, we plan to release the implementation, permitted processed component data, scripts to regenerate restricted artifacts, and trained weights where redistribution is allowed by the original datasets and external model providers.
 
 DisFace3DNet constructs an aggregate facial-attractiveness estimate from seven explicit component outputs: identity-derived shape, skin, hair, light, background, expression, and pose. Each output participates directly in score assembly.
 
@@ -10,7 +10,7 @@ DisFace3DNet constructs an aggregate facial-attractiveness estimate from seven e
 
 **Component Disentanglement** → **Dynamic Component Encoder / Static Component Encoder** → **Component Score Fusion**
 
-The component-specific branches produce five nonnegative static scores and two signed dynamic responses. Global fusion coefficients are learned during training and fixed at inference, making the weighted component contributions available with the final rating.
+The component-specific branches produce five nonnegative static scores and two signed dynamic scores. After joint training, the network is frozen and fusion coefficients are fitted on its standardized outputs. The resulting overall prediction has seven additive component terms and an intercept.
 
 ## Planned release
 
@@ -23,7 +23,7 @@ The component-specific branches produce five nonnegative static scores and two s
 
 ## Data availability
 
-The processed package will be released as completely as the original dataset licenses, participant-privacy requirements, and provider policies permit. Original SCUT-FBP5500, SCUT-FBP500, and LiveBeauty face images will not be mirrored when their terms prohibit redistribution. In those cases, this repository will provide manifests and deterministic preprocessing scripts so authorized users can regenerate the component inputs from official dataset copies.
+The paper evaluates SCUT-FBP5500. Processed component data will be shared where the original dataset terms, participant-privacy requirements, and provider policies permit. Original face images will not be mirrored where redistribution is prohibited. For restricted processed artifacts, we plan to provide manifests and regeneration scripts for use with officially obtained dataset copies.
 
 ## Citation
 
